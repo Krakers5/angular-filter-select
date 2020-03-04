@@ -22,8 +22,8 @@ export class AppComponent implements OnInit {
     })
   }
 
-  filterUsers(filteredText: string) {
-    this.filteredUsers = this.users.filter(user =>  user.name.toLowerCase().includes(filteredText));
+  filterUsersByName(name: string) {
+    this.filteredUsers = this.users.filter(user =>  user.name.toLowerCase().includes(name));
 }
 
 }
